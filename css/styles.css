@@ -387,7 +387,7 @@ tr:last-child td { border-bottom: 0; }
 .preview-layer {
   position: fixed;
   inset: 0;
-  background: rgba(1, 19, 69, 0.55);
+  background: rgba(1, 19, 69, 0.82);
   z-index: 30;
   display: flex;
   flex-direction: column;
@@ -443,6 +443,11 @@ tr:last-child td { border-bottom: 0; }
   padding-top: 12px;
   font-size: 12px;
   color: var(--muted);
+}
+
+@media (max-width: 1180px) {
+  .quote-card { grid-template-columns: 1fr; }
+  .row-actions { justify-content: flex-start; }
 }
 
 @media (max-width: 980px) {

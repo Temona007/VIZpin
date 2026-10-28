@@ -1569,7 +1569,7 @@ async function downloadPriceList() {
   doc.text(intro, 28, y);
   y += intro.length * 11 + 12;
 
-  const columns = [28, 90, 150, 310, 430, 520, 610, 700];
+  const columns = [28, 86, 176, 348, 468, 548, 628, 708];
   const heads = ["SKU", "Category", "Item", "Finish", "MSRP", "Bronze", "Silver", "Gold"];
   const paintHead = () => {
     ensure(22);
@@ -1580,7 +1580,7 @@ async function downloadPriceList() {
     doc.setFont("helvetica", "bold");
     heads.forEach((label, index) => {
       const align = index >= 4 ? "right" : "left";
-      const x = index >= 4 ? columns[index] + 52 : columns[index];
+      const x = index >= 4 ? columns[index] + 46 : columns[index];
       doc.text(label, x, y + 11, { align });
     });
     y += 16;
@@ -1602,7 +1602,7 @@ async function downloadPriceList() {
       doc.setTextColor(...NAVY);
       cells.forEach((cell, cellIndex) => {
         const align = cellIndex >= 4 ? "right" : "left";
-        const x = cellIndex >= 4 ? columns[cellIndex] + 52 : columns[cellIndex];
+        const x = cellIndex >= 4 ? columns[cellIndex] + 46 : columns[cellIndex];
         doc.text(String(cell), x, y + 11, { align });
       });
       y += 16;
@@ -1629,7 +1629,7 @@ async function downloadPriceList() {
     doc.setTextColor(...NAVY);
     cells.forEach((cell, cellIndex) => {
       const align = cellIndex >= 4 ? "right" : "left";
-      const x = cellIndex >= 4 ? columns[cellIndex] + 52 : columns[cellIndex];
+      const x = cellIndex >= 4 ? columns[cellIndex] + 46 : columns[cellIndex];
       doc.text(String(cell), x, y + 11, { align });
     });
     y += 16;
