@@ -458,14 +458,25 @@ tr:last-child td { border-bottom: 0; }
     height: auto;
     z-index: 5;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    overflow-x: auto;
+    overflow: visible;
     border-right: 0;
     border-bottom: 1px solid var(--line);
-    padding: 10px;
+    padding: 10px 12px;
+    gap: 8px;
   }
-  .sidebar-foot { margin-top: 0; flex-direction: row; align-items: center; }
-  .nav { flex-direction: row; }
+  .side-brand { flex: 1 1 auto; min-width: 0; }
+  .side-brand span { display: none; }
+  .sidebar-foot { margin-top: 0; margin-left: auto; flex-direction: row; align-items: center; }
+  .side-new { order: 3; }
+  .nav {
+    order: 4;
+    flex: 1 1 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
   .side-new, .nav button { white-space: nowrap; }
   .editor-grid, .stats, .login-cards, .grid-2, .who { grid-template-columns: 1fr; }
   .quote-card { grid-template-columns: 1fr; }

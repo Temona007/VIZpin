@@ -1051,7 +1051,7 @@ function pricesTemplate() {
       </div>
       <button class="btn-accent" type="button" data-action="download-prices">Download PDF</button>
     </header>
-    <p class="hint">Workspace catalog. An administrator can replace these figures in Pricing. Finish upcharges are included in the finish rows.</p>
+    <p class="hint">Workspace catalog. An administrator can replace these figures in Pricing. Finish upcharges are included in the finish rows. Swipe a table to see Bronze, Silver, Gold, and MSRP.</p>
     ${sections}
     <h2 style="margin:18px 0 8px">Services</h2>
     <div class="table-wrap"><table>
